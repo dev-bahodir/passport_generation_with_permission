@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Passport Generation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--<string-array name="spin_region">
+        <item>Qashqadaryo</item>
+        <item>Toshkent</item>
+        <item>Surxondaryo</item>
+        <item>Samarqand</item>
+        <item>Jizzax</item>
+    </string-array>-->
+
+    <string-array name="spin_regions">
+        <item>Andijon</item>
+        <item>Buxoro</item>
+        <item>Farg'ona</item>
+        <item>Jizzax</item>
+        <item>Xorazm</item>
+        <item>Namangan</item>
+        <item>Navoiy</item>
+        <item>Qashqadaryo</item>
+        <item>Samarqand</item>
+        <item>Sirdaryo</item>
+        <item>Surxondaryo</item>
+        <item>Toshkent</item>
+
+    </string-array>
+
+    <!--<string-array name="spin_gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>-->
+
+    <string-array name="spin_genders">
+        <item>Other</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_simple"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="dev.bahodir.passportgeneration.fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_citizenAllFragment"
+            app:destination="@id/citizenAllFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_menuFragment_to_citizenAddFragment"
+            app:destination="@id/citizenAddFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/citizenAllFragment"
+        android:name="dev.bahodir.passportgeneration.fragments.CitizenAllFragment"
+        android:label="fragment_citizen_all"
+        tools:layout="@layout/fragment_citizen_all" >
+        <action
+            android:id="@+id/action_citizenAllFragment_to_citizenInformationFragment"
+            app:destination="@id/citizenInformationFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/citizenAddFragment"
+        android:name="dev.bahodir.passportgeneration.fragments.CitizenAddFragment"
+        android:label="fragment_citizen_add"
+        tools:layout="@layout/fragment_citizen_add" />
+    <fragment
+        android:id="@+id/citizenInformationFragment"
+        android:name="dev.bahodir.passportgeneration.fragments.CitizenInformationFragment"
+        android:label="fragment_citizen_information"
+        tools:layout="@layout/fragment_citizen_information" />
+</navigation>
